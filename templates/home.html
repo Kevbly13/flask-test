@@ -4,53 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Flask Test Project</title>
-  <style>
-    h1 {
-      font-size: 40px;
-      font-family: Roboto;
-      font-weight: normal;
-      color: rgb(100, 100 , 100);
-      text-align: center;
-    }
-    h2 {
-      font: size; 32px;
-      font-family: Roboto;
-      color: rgb(150, 150, 150);
-      text-align: center;
-      font-weight: normal;
-    }
-    .bodytext {
-      font: size; 24px;
-      font-family: Roboto;
-      color: rgb(80, 80, 80);
-    }
-    
+  <style> 
     #banner {
-      width: 100%;
       height: 300px;
-      obcoverfit: cover;
-    }
-
-    #container {
-      max-width: 720px;
-      margin: 0 auto;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <h1>Basketball Test Project with Flask</h1>
-    <img id="banner" src="https://flask-test.kevbly13.repl.co/static/bball.jpg">
-    <h2>About Jovian</h2>
+  <div class="container">
+    <h1 class="text-center mb-4">Basketball Test Project with Flask</h1>
+    <img class='img-fluid' id="banner" src="https://flask-test.kevbly13.repl.co/static/bball.jpg">
+    <h2 class="text-center">About Jovian</h2>
     <p class="bodytext">
       This is a sample paragraph
     </p>
-    <h2>Open Positions</h2>
+    <h2 class="text-center">Open Positions</h2>
     <p class = "bodytext">TODO - Show the jobs here</p>
-    <div style="text-align:center;">
-      <button>Contact Us</button>
-      <p>Copyright 2022, Jovian</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-4">Copyright 2022, Jovian</p>
     </div>
   </div>
 </body>
