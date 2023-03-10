@@ -18,11 +18,17 @@
     <h1 class="text-center mb-4">Basketball Test Project with Flask</h1>
     <img class='img-fluid' id="banner" src="https://flask-test.kevbly13.repl.co/static/bball.jpg">
     <h2 class="text-center">About Jovian</h2>
-    <p class="bodytext">
-      This is a sample paragraph
+    <p>
+      This is a sample paragraph about the company, its founding, its history.  Basically what is written here is anything the user would like to know about the company and its founding.  Any further questions - NO.
     </p>
     <h2 class="text-center">Open Positions</h2>
-    <p class = "bodytext">TODO - Show the jobs here</p>
+    <p>
+      <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+      </div>
+    </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2022, Jovian</p>
